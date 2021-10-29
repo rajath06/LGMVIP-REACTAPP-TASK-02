@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
+.fetch
+{
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 40px;
+  position: relative;
+  transition: 0.5s;
+  border-radius: 50%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navb{
+  background-image: url("https://t4.ftcdn.net/jpg/02/16/47/35/360_F_216473592_NefHePTpMfvYMNjD3UQTUVJy7DFPwqKA.jpg");
+  background-repeat: no-repeat;
+  background-size: 1540px 700px;
+  height: 600px;
+  margin-top: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.image img
+{
+  width: 1530px;
+  height: 600px;
+  margin-top: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navi
+{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.text
+{
+  padding: 5px 10px;
+  font-weight: bold;
+  font-size: 40px;
+  color:white;
+}
+.abt {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 130px;
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.fetch:after 
+{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fetch:hover
+{
+  letter-spacing: 6px ;
+}
+
+.fetch:hover:after 
+{
+  opacity: 1;
+  right: 0;
+}
+
+
+
+.fetch:hover 
+{
+  background-color:yellow;
+} 
+
+
+.userdata
+{
+  width: 100%;
+  height: fit-content;
+  background-color:lightgray;
+}
+
+#main 
+{
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+.profile
+{
+  transform: skew(10deg);
+  background-color:aqua;
+  width: 340px;
+  margin: 20px;
+  text-align: center;
+  transition: transform ease 0.2s;
+  opacity: 0.8;
+  margin-top: 8vh;
+  box-shadow: 0 5px 25px red;
+}
+.photo{
+  border-radius: 10%;
+}
+.profile:hover 
+{
+  transform: scale(1.2);
+  opacity: 2;
+}
+
+body{
+  background-color:lightskyblue;
+}
+
+.navi button 
+{
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  Letter-spacing: 4px;
+  transition: 0.3s;
+  font-size: 30px;
+  color:white;
+  background:lightsalmon;
+  border-radius:50%;
+  border-color:blanchedalmond;
+
 }
